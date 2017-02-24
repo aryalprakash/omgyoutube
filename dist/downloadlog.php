@@ -1,5 +1,5 @@
 <?php
-$connect=mysqli_connect('localhost','omgyoutube','ChangeMe123','omgyoutu_blog');
+$connect=mysqli_connect('localhost','root','root','omgyoutube');
 
 if(mysqli_connect_errno($connect))
 {

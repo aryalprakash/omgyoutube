@@ -3,7 +3,7 @@ define('MYSQL_BOTH',MYSQLI_BOTH);
 define('MYSQL_NUM',MYSQLI_NUM);
 define('MYSQL_ASSOC',MYSQLI_ASSOC);
 
-$connect=mysqli_connect('localhost','omgyoutube','ChangeMe123','omgyoutu_blog');
+$connect=mysqli_connect('localhost','root','root','omgyoutube');
 
 $start = date('Y-m-d');
 $end = date('Y-m-d');
