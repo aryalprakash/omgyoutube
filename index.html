@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta name="fragment" content="!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#B61F24">
+    <meta name="description" content="Watch and download Youtube videos conveniently in web and mobile. Download videos in all available qualities for absolutely free." />
+    <meta name="og:image" content="http://omgyoutube.com/img/download%20youtube%20videos.png" />
+    <link rel="manifest" href="/manifest.json">
+</head>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '225919071115345',
+            xfbml      : true,
+            version    : 'v2.1'
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=225919071115345";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'))
+</script>
+<body>
+<div id="fb-root"></div>
+<div id='root'>
+</div>
+<script type="text/javascript" src="https://www.youtube2mp3.cc/js/api.js"></script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="/static/bundle.js"></script>
+</body>
+</html>
