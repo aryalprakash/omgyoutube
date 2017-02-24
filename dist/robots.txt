@@ -1,0 +1,3 @@
+Sitemap: http://omgyoutube.com/sitemap.xml
+User-agent:*
+Disallow:

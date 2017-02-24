@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>OMG Youtube! Watch and download Youtube Videos</title>
+    <meta name="fragment" content="!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#B61F24">
+    <meta name="description" content="Watch and download Youtube videos in MP3 or MP4 formats. Works on web and mobile." />
+    <meta name="og:image" content="http://omgyoutube.com/img/download%20youtube%20videos.png" />
+    <link rel="manifest" href="/manifest.json">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '225919071115345',
+          xfbml      : true,
+          version    : 'v2.1'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=225919071115345";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-73839716-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body>
+    <div id='root'>
+    </div>
+    <script src="bundle.js"></script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </body>
+</html>
