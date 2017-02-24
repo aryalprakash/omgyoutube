@@ -58,20 +58,20 @@ if(isset($_GET['date']) && !empty($_GET["date"])){
 	$myArray2 = [];
 	$myArray3 = [];
 	
-	if ($result = $mysqli->query("SELECT * FROM visits WHERE date between '$start' AND '$end' ")) {
+	if ($result = $mysqli_query($connect, "SELECT * FROM visits WHERE date between '$start' AND '$end' ")) {
 
 		while($row = $result->fetch_array(MYSQL_ASSOC)) {
 				$myArray1[] = $row;
 		}
 	}
 	
-	if($result = $mysqli->query("SELECT * FROM downloads WHERE date between '$start' AND '$end' ")){
+	if($result = $mysqli_query($connect, "SELECT * FROM downloads WHERE date between '$start' AND '$end' ")){
 		while($row = $result->fetch_array(MYSQL_ASSOC)) {
 				$myArray2[] = $row;
 		}
 	}
 	
-	if($result = $mysqli->query("SELECT * FROM search WHERE date between '$start' AND '$end' ")){
+	if($result = $mysqli_query($connect, "SELECT * FROM search WHERE date between '$start' AND '$end' ")){
 		while($row = $result->fetch_array(MYSQL_ASSOC)) {
 				$myArray3[] = $row;
 		}
