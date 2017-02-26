@@ -27,7 +27,7 @@ const store = createStore(
     applyMiddleware(thunk)
 );
 
-const appHistory = useRouterHistory(createHashHistory)({ queryKey: false })
+//const appHistory = useRouterHistory(createHashHistory)({ queryKey: false })
 
 render((
     <Provider store={store}>
@@ -36,7 +36,7 @@ render((
         </div>
         <div className="center">
             <div className="">
-                <Router history={appHistory}>
+                <Router history={browserHistory}>
                     <Route name="main" component={Main}>
                         <Route path="/" component={App} />
                         <Route path="/watch/v=:videoID" component={Watch}/>
