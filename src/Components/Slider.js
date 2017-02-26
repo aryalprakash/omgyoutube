@@ -18,7 +18,7 @@ export default class Slider extends Component {
                  </div>
             </div>
             <div className="slider-right">
-                <img src="../img/slider.png" width="95%" />
+                <img src='/img/slider.png' width="95%" />
             </div>
             </div>
         </div>)

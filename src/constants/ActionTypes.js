@@ -3,7 +3,7 @@ export const API_URL = 'http://youtubedltest0.herokuapp.com/api/info?url=https:/
 //export const API_KEY = 'AIzaSyArwuhcNmt0NAixnehN_SqEVoqQmQTEWus';
 export const API_KEY = 'AIzaSyCaskXcV-afNC59qRS9zAhpCTwPXAKkt2A';
 //export const SERVER_URL = 'http://localhost/omgyoutube';
-export const SERVER_URL = 'http://45.55.241.65';
+export const SERVER_URL = 'http://omgyoutube.com';
 export const YTS_LIST ='https://yts.ag/api/v2/list_movies.json'
 
 export const PLAYLISTS = [
