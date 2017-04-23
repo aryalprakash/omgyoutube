@@ -128,7 +128,7 @@ class Watch extends Component {
                         {"property": "twitter:card", "content": "summary_large_image"},
                         {"property": "twitter:site", "content": "@omgyoutube"},
                         {"property": "twitter:title", "content":"Download "+title},
-                        {"property": "twitter:description", "content":description},
+                        {"property": "twitter:text:description", "content":description},
                         {"property":"twitter:image", "content": thumbnail}
                     ]}
                 />
