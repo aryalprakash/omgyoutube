@@ -8,14 +8,14 @@ import {PLAYLISTS, Collections, SERVER_URL} from '../constants/ActionTypes.js'
 export default class PlayMenu extends Component {
 
     _keeplog(value){
-        var data = new FormData();
-        data.append("page", value);
-        fetch(SERVER_URL+"/visitlog.php",
-            {
-                method: "POST",
-                body: data
-            })
-            .then(function(res){ return res.json(); });
+        //var data = new FormData();
+        //data.append("page", value);
+        //fetch(SERVER_URL+"/visitlog.php",
+        //    {
+        //        method: "POST",
+        //        body: data
+        //    })
+        //    .then(function(res){ return res.json(); });
     }
 
     _goto(type, playlist, slug){
