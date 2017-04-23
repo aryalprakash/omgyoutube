@@ -1,36 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+             <urlset
+                   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-<url>
-  <loc>http://omgyoutube.com/</loc>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://omgyoutube.com/#/playlist/cute</loc>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://omgyoutube.com/#/playlist/doityourself</loc>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://omgyoutube.com/#/playlist/funny</loc>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://omgyoutube.com/#/playlist/amazing</loc>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://omgyoutube.com/#/playlist/nsfw</loc>
-  <changefreq>always</changefreq>
-</url>
-<url>
-  <loc>http://omgyoutube.com/#/playlist/omg</loc>
-  <changefreq>always</changefreq>
-</url>
+             <url>
+               <loc>http://omgyoutube.com/</loc>
+               <changefreq>always</changefreq>
+             </url>
+             <url>
+                 <loc>http://omgyoutube.com/collection/Music/nepali</loc>
+                 <changefreq>always</changefreq>
+             </url>
+             <url>
+                 <loc>http://omgyoutube.com/collection/Music/hindi</loc>
+                 <changefreq>always</changefreq>
+             </url>
+             <url>
+                 <loc>http://omgyoutube.com/collection/Music/english</loc>
+                 <changefreq>always</changefreq>
+             </url>
+             <url>
+                 <loc>http://omgyoutube.com/collection/Music/lok-dohori</loc>
+                 <changefreq>always</changefreq>
+             </url>
+             <url>
+                 <loc>http://omgyoutube.com/collection/Movies/nepali</loc>
+                 <changefreq>always</changefreq>
+             </url>
+             <url>
+                 <loc>http://omgyoutube.com/collection/Movies/hindi</loc>
+                 <changefreq>always</changefreq>
+             </url>
+             <url>
+                 <loc>http://omgyoutube.com/collection/Movies/english</loc>
+                 <changefreq>always</changefreq>
+             </url>
+             <url>
+                 <loc>http://omgyoutube.com/collection/Movies/south-indian</loc>
+                 <changefreq>always</changefreq>
+             </url>
+             <url>
+               <loc>http://omgyoutube.com/playlist/cute</loc>
+               <changefreq>always</changefreq>
+             </url>
+             <url>
+               <loc>http://omgyoutube.com/playlist/doityourself</loc>
+               <changefreq>always</changefreq>
+             </url>
+             <url>
+               <loc>http://omgyoutube.com/playlist/funny</loc>
+               <changefreq>always</changefreq>
+             </url>
+             <url>
+               <loc>http://omgyoutube.com/playlist/amazing</loc>
+               <changefreq>always</changefreq>
+             </url>
+             <url>
+               <loc>http://omgyoutube.com/playlist/nsfw</loc>
+               <changefreq>always</changefreq>
+             </url>
+             <url>
+               <loc>http://omgyoutube.com/playlist/omg</loc>
+               <changefreq>always</changefreq>
+             </url>
+             <url>
+                 <loc>http://omgyoutube.com/playlist/live</loc>
+                 <changefreq>always</changefreq>
+             </url>
+<url><loc>http://omgyoutube.com/watch/v=o8XX5pQPeTY
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=6NbclBWd8AM
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=eeOTR-0tVbM
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=4R7BxxuGmmE
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch?v=4R7BxxuGmmE
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=4R7BxxuGmmE
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=CrN3vP0mBXI
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=4R7BxxuGmmE
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=CrN3vP0mBXI
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=4R7BxxuGmmE
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=CrN3vP0mBXI
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=O5LBzdvSm8Y
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=4R7BxxuGmmE
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=eJpmcbOQKGA
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=c_JrMb7hAEg
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=uTnmpvJ7sWQ
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=BagQPcN5tGE
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=D2ZDZ7bWwX8
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=zZjZHAp487w
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=ltq_Ebt5ddg
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=cCa39_fqbG0
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=ni_E3F2uqkE
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=jIkqYl8ju80
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=1moMPvcSTVo
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=kQ9Mh-gKlLg
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=O5LBzdvSm8Y
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/search/watch/v=cCa39_fqbG0
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=cCa39_fqbG0
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=CrN3vP0mBXI
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=l_XdP1tpr_Q
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=QEfvn0bvNlI
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=u5vj81NnFEA
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=Vldd-sLVYZ0
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=e5kYmiJeioQ
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=l_XdP1tpr_Q
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=-GydnFPTgus
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=om1hmdn_1eo
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=_JiY4u8FYK4
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=nZDApzCLsfc
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=_JiY4u8FYK4
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=nZDApzCLsfc
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=_JiY4u8FYK4
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=eL6w8ZcieIs
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=nZDApzCLsfc
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=eL6w8ZcieIs
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=nZDApzCLsfc
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=eL6w8ZcieIs
+</loc><changefreq>weekly</changefreq></url>
+
+<url><loc>http://omgyoutube.com/watch/v=WQk5CI4NZII
+</loc><changefreq>weekly</changefreq></url>
+
 </urlset>
