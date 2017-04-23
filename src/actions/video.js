@@ -240,12 +240,12 @@ function keeplog (type, id, title){
     data.append("type", type);
     data.append("id", id);
     data.append("title", title);
-    fetch(SERVER_URL+"/downloadlog.php",
-        {
-            method: "POST",
-            body: data
-        })
-        .then(function(res){ return res.json(); });
+    //fetch(SERVER_URL+"/downloadlog.php",
+    //    {
+    //        method: "POST",
+    //        body: data
+    //    })
+    //    .then(function(res){ return res.json(); });
 }
 
 export function clearChannelVideos(){

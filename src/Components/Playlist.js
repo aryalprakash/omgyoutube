@@ -45,14 +45,14 @@ export default class Playlist extends Component {
 
 
     _keeplog(value){
-        var data = new FormData();
-        data.append("page", value);
-        fetch(SERVER_URL+"/visitlog.php",
-            {
-                method: "POST",
-                body: data
-            })
-            .then(function(res){ return res.json(); });
+        //var data = new FormData();
+        //data.append("page", value);
+        //fetch(SERVER_URL+"/visitlog.php",
+        //    {
+        //        method: "POST",
+        //        body: data
+        //    })
+        //    .then(function(res){ return res.json(); });
     }
 
 
@@ -67,8 +67,8 @@ export default class Playlist extends Component {
             return (<div>
                 <Helmet
                     htmlAttributes={{"lang": "en", "amp": undefined}}
-                    title={"OMG Youtube - " + this.props.routeParams.playlist + " videos in Youtube"}
-                    defaultTitle="OMG! Download videos from Youtube"
+                    title={"Download " + this.props.routeParams.playlist + " videos in Youtube"}
+                    defaultTitle="OMG Youtube! Download videos from Youtube"
                 />
                 <div className=" playlist white">
                     <div className="playlistHeader">
@@ -77,8 +77,8 @@ export default class Playlist extends Component {
                     </div>
 
                 {videos.length > 0 ?
-                    videos.map(video=> {
-                        return (<div className="playlist-results" key={video.snippet.resourceId.videoId}>
+                    videos.map(video=> video.snippet.thumbnails?
+                        (<div className="playlist-results" key={video.snippet.resourceId.videoId}>
                             <div className="sidebar-video">
                                 <div className="search-list">
                                     <div className="sidebar-video-thumbnail search-list-thumbnail">
@@ -93,8 +93,7 @@ export default class Playlist extends Component {
                                 </div>
                             </div>
                             <div className="line"></div>
-                        </div>)
-                    })
+                        </div>): '')
                     : <div>
                     <div className="no-results">Oops! No videos found. Please try again later.</div>
                 </div>

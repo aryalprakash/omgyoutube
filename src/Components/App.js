@@ -49,14 +49,14 @@ export default class App extends Component {
   }
 
   keeplog(){
-    var data = new FormData();
-    data.append("page", "index");
-    fetch(SERVER_URL+"/visitlog.php",
-        {
-          method: "POST",
-          body: data
-        })
-        .then(function(res){ return res.json(); });
+    //var data = new FormData();
+    //data.append("page", "index");
+    //fetch(SERVER_URL+"/visitlog.php",
+    //    {
+    //      method: "POST",
+    //      body: data
+    //    })
+    //    .then(function(res){ return res.json(); });
   }
 
   _gotoChannel(channelId, channelName){
@@ -103,7 +103,7 @@ export default class App extends Component {
           <Helmet
               htmlAttributes={{"lang": "en", "amp": undefined}}
               title={"OMG Youtube! Watch and Download Youtube Videos"}
-              defaultTitle="OMG! Download videos from Youtube"
+              defaultTitle="OMG Youtube! Download videos from Youtube"
           />
           <div className="home-content white">
           {!this.props.routeParams.watch?<Slider />:''}
@@ -126,7 +126,7 @@ export default class App extends Component {
                       return (
                           <div className="video-card" key={item.snippet.resourceId.videoId}>
                             <div className="video-thumb">
-                              <Link to={`/watch/v=${item.snippet.resourceId.videoId}`}><img width="100%" src={item.snippet.thumbnails.medium.url ? item.snippet.thumbnails.medium.url : ''} /></Link>
+                              <Link to={`/watch/v=${item.snippet.resourceId.videoId}`}><img width="100%" src={item.snippet && item.snippet.thumbnails && item.snippet.thumbnails.medium.url ? item.snippet.thumbnails.medium.url : ''} /></Link>
                             </div>
                             <div className="video-tab-info">
                               <div className="video-title">

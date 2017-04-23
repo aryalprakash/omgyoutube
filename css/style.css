@@ -785,7 +785,7 @@ iframe{
 }
 
 .dwn_mp3{
-    width: inherit;
+    width: 150px;
     margin-top: 5px;
     height: 32px;
 }

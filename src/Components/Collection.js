@@ -48,22 +48,22 @@ export default class Collection extends Component {
 
 
     _keeplog(value){
-        var data = new FormData();
-        data.append("page", "index");
-        data.append("page", value);
-        fetch(SERVER_URL+"/visitlog.php",
-            {
-                method: "POST",
-                body: data
-            })
-            .then(function(res){ return res.json(); });
+        //var data = new FormData();
+        //data.append("page", "index");
+        //data.append("page", value);
+        //fetch(SERVER_URL+"/visitlog.php",
+        //    {
+        //        method: "POST",
+        //        body: data
+        //    })
+        //    .then(function(res){ return res.json(); });
     }
 
 
     renderVideos(videos){
         return (<div>
-        {videos.map(video=> {
-            return(<div><div className="sidebar-video">
+        {videos.map(video=> video.snippet.thumbnails?
+            (<div><div className="sidebar-video">
                     <div className="search-list">
                         <div className="sidebar-video-thumbnail search-list-thumbnail">
                             <Link to={`/watch/v=${video.snippet.resourceId.videoId}`}><img src={video.snippet.thumbnails ? video.snippet.thumbnails.medium.url : '../img/logo.png'} width="100%"/></Link>
@@ -77,8 +77,8 @@ export default class Collection extends Component {
                     </div>
                 </div>
                 <div className="line"></div>
-            </div>)
-        }, this)}
+            </div>): ''
+        , this)}
             </div>
     )}
 
@@ -107,7 +107,7 @@ export default class Collection extends Component {
                 return (<div>
                     <Helmet
                         htmlAttributes={{"lang": "en", "amp": undefined}}
-                        title={"Download "+collection+ " from Youtube"}
+                        title={"Download "+slug+" "+collection+ " from Youtube"}
                         defaultTitle="OMG! Download videos from Youtube"
                     />
                     <div className="playlist white">

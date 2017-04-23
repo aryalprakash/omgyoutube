@@ -86,8 +86,9 @@ class Watch extends Component {
         if(this.props.relatedVideos){
             relatedVideos = this.props.relatedVideos.items;
         }
-        this.state.omgurl = `http://omgyoutube.com/#/watch/v=${this.props.routeParams.videoID}`;
-        let Iframe="iframe"
+        this.state.omgurl = `http://omgyoutube.com/watch/v=${this.props.routeParams.videoID}`;
+        let ogurl = 'https://https://www.youtube.com/embed/'+this.props.routeParams.videoID;
+        let Iframe="iframe";
         if(this.props.vidinfo && this.props.vidinfo.info){
             //try {
             videoData = this.props.vidinfo;
@@ -108,16 +109,27 @@ class Watch extends Component {
             return (<div>
                 <Helmet
                     htmlAttributes={{"lang": "en", "amp": undefined}}
-                    title={title ? "Download "+ title : "OMG Youtube"}
-                    defaultTitle="OMG! Download videos from Youtube"
+                    title={title ? "Download "+ title : "OMG Youtube - Download videos from Youtube"}
+                    defaultTitle="OMG Youtube! Download videos from Youtube"
                     meta={[
                         {"name": "description", "content": description},
                         {"name": "keywords", "content": keywords},
+                        {"name":"thumbnail", "content": thumbnail},
                         {"property": "og:site_name", "content": "OMG Youtube"},
-                        {"property": "og:url", "content": omgurl},
+                        {"property": "og:video", "content": ogurl},
+                        {"property": "og:video:url", "content": ogurl},
+                        {"property": "og:video:secure_url", "content": ogurl},
+                        {"property": "og:video:type", "content": "application/x-shockwave-flash"},
+                        {"property": "og:video:width", "content": "1280"},
+                        {"property": "og:video:height", "content": "720"},
                         {"property": "og:title", "content": "Download "+ title},
                         {"property": "og:image", "content": thumbnail},
-                        {"property": "og:type", "content": video}
+                        {"property": "og:type", "content": video},
+                        {"property": "twitter:card", "content": "summary_large_image"},
+                        {"property": "twitter:site", "content": "@omgyoutube"},
+                        {"property": "twitter:title", "content":"Download "+title},
+                        {"property": "twitter:description", "content":description},
+                        {"property":"twitter:image", "content": thumbnail}
                     ]}
                 />
                 <div className="transparent">
@@ -140,7 +152,7 @@ class Watch extends Component {
                                     <div className="download">
                                         {download_button}
                                         {format_list}
-                                        <iFrame className="dwn_mp3" src={"https://www.youtube2mp3.cc/button-api/#"+this.props.routeParams.videoID+"|mp3"} />
+                                        <iFrame className="dwn_mp3" src={"https://ycapi.org/button/?v="+this.props.routeParams.videoID+"&c=1&f=MP3"} scrolling="no" width="175px" />
                                     </div>
                                 </div>
                                 </div>

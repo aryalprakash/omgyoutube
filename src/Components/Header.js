@@ -274,9 +274,6 @@ export default class Header extends Component {
                         <div id="fb-root"></div>
                         <div className="fb-like" data-href="https://facebook.com/OMGYoutubeAPP" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
                     </div>
-                    <div className="tweet-actions">
-                        <a href="https://twitter.com/OMGYoutubeApp" className="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow</a>
-                    </div>
                 </div>
 
             <div className={this.state.nav ? "playlistSidebar block" : "playlistSidebar"} ref="sidebar">

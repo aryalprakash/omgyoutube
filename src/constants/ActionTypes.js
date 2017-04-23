@@ -11,7 +11,7 @@ export const PLAYLISTS = [
     {name: 'omg', id: 'PLlpHoeIVvNBtc4qWrA2vaNOVAym-yizu9'},
     {name: 'doityourself', id:'PLlpHoeIVvNBvin5-E-WiBKQRSAMK10Hbx'},
     {name: 'funny', id: 'PLlpHoeIVvNBs_B2VTjFaL0cdjyOMTU6X9'},
-    {name: 'nsfw', id: 'PLlpHoeIVvNBvy-ahQrS2gFkqs0alrkDA9'},
+    {name: 'nsfw', id: 'PLlpHoeIVvNBs2pYb5B5v107rj79Hn31Kl'},
     {name: 'fail', id: 'PLlpHoeIVvNBtIKGBad4ZR_IuAWwjY8UV-'},
     {name: 'disgusting', id: 'PLlpHoeIVvNBtJonjUfNnAVyfLyUx40Qih'},
     {name: 'amazing', id: 'PLlpHoeIVvNBsuOglYFs08BrmUlfjNYFFA'},
