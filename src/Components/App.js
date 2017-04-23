@@ -114,6 +114,7 @@ export default class App extends Component {
                 {"name":"thumbnail", "content": thumbnail},
                 {"property": "og:site_name", "content": "OMG Youtube"},
                 {"property": "og:image", "content": thumbnail},
+                {"property": "og:description", "content": description},
                 {"property": "twitter:card", "content": "summary_large_image"},
                 {"property": "twitter:site", "content": "@omgyoutube"},
                 {"property": "twitter:title", "content": title},
