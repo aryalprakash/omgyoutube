@@ -99,7 +99,7 @@ class Movie extends Component {
         //console.log(this.props.movieSuggestions)
         let relatedVideos, videoData, title, tweetTitle, url, omgurl, uploader, uploader_id, thumbnail, description, synopsis, download_button, formats, format_list, mp3, views, keywords, genres;
 
-        this.state.omgurl = `http://omgyoutube.com/#/movie/v=${this.props.routeParams.videoID}`;
+        this.state.omgurl = `http://omgyoutube.com/movie/v=${this.props.routeParams.videoID}`;
         let Iframe="iframe"
         let trailer, movie_title;
         if(this.props.movieDetails){
@@ -111,22 +111,27 @@ class Movie extends Component {
             thumbnail = this.props.movieDetails.movie.medium_cover_image;
             genres = this.props.movieDetails.movie.genres.map(genre => <div className="genre" onClick={_=>this.listThisGenre(genre)}>{genre}</div>)
         }
-
+        keywords = "omg youtube, youtube downloader, movie torrents, torrent downloader, easiset youtube downloader, youtube to mp4, youtube to mp3, hd movie torrents, download videos";
 
         const video = this.props.routeParams.videoID;
         return (<div>
             <Helmet
                 htmlAttributes={{"lang": "en", "amp": undefined}}
-                title={movie_title ? "Download "+ movie_title+" : OMG Youtube" : "OMG Youtube"}
-                defaultTitle="OMG! Download videos from Youtube"
+                title={movie_title ? "Download "+ movie_title+" Torrent : OMG Youtube" : "OMG Youtube"}
+                defaultTitle="OMG Youtube! Download videos from Youtube"
                 meta={[
-                    {"name": "description", "content": description},
+                    {"name": "description", "content": synopsis},
                     {"name": "keywords", "content": keywords},
                     {"property": "og:site_name", "content": "OMG Youtube"},
                     {"property": "og:url", "content": omgurl},
-                    {"property": "og:title", "content": "Download "+ title},
+                    {"property": "og:title", "content": "Download "+ movie_title},
                     {"property": "og:image", "content": thumbnail},
-                    {"property": "og:type", "content": video}
+                    {"property": "og:type", "content": "video"},
+                    {"property": "twitter:card", "content": "summary_large_image"},
+                    {"property": "twitter:site", "content": "@omgyoutube"},
+                    {"property": "twitter:title", "content":"Download "+ movie_title},
+                    {"property": "twitter:text:description", "content":synopsis},
+                    {"property":"twitter:image", "content": thumbnail}
                 ]}
             />
             <div className="transparent">

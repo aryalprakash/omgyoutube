@@ -55,15 +55,15 @@ export default class MovieTorrents extends Component {
     }
 
     _keeplog(){
-        var data = new FormData();
-        data.append("type", "Movie");
-        data.append("query", this.state.query!=''?this.state.query:this.state.genre);
-        fetch(SERVER_URL+"/searchlog.php",
-            {
-                method: "POST",
-                body: data
-            })
-            .then(function(res){ return res.json(); });
+        //var data = new FormData();
+        //data.append("type", "Movie");
+        //data.append("query", this.state.query!=''?this.state.query:this.state.genre);
+        //fetch(SERVER_URL+"/searchlog.php",
+        //    {
+        //        method: "POST",
+        //        body: data
+        //    })
+        //    .then(function(res){ return res.json(); });
     }
 
 
@@ -137,11 +137,28 @@ export default class MovieTorrents extends Component {
         try{
             let {movies, loader} = this.props;
             const {renderSearch} = this.state;
-                return (<div>
+            let title = "Download HD Movie Torrents | OMG Youtube";
+            let description = "Watch Movie Trailers and download HD Movie Torrents. Collection of latest and popular HD Movie torrents. Filter by genre, year or rating.";
+            let thumbnail = "http://omgyoutube.com/img/download%20youtube%20videos.png";
+            let keywords = "omg youtube, youtube downloader, movie torrents, torrent downloader, easiset youtube downloader, youtube to mp4, youtube to mp3, hd movie torrents, download videos";
+
+            return (<div>
                     <Helmet
                         htmlAttributes={{"lang": "en", "amp": undefined}}
-                        title={"Movie Torrents | OMG Youtube"}
+                        title={"Download HD Movie Torrents | OMG Youtube"}
                         defaultTitle="OMG! Download videos from Youtube"
+                        meta={[
+                            {"name": "description", "content": description},
+                            {"name": "keywords", "content": keywords},
+                            {"name":"thumbnail", "content": thumbnail},
+                            {"property": "og:site_name", "content": "OMG Youtube"},
+                            {"property": "og:image", "content": thumbnail},
+                            {"property": "twitter:card", "content": "summary_large_image"},
+                            {"property": "twitter:site", "content": "@omgyoutube"},
+                            {"property": "twitter:title", "content": title},
+                            {"property": "twitter:text:description", "content":description},
+                            {"property":"twitter:image", "content": thumbnail}
+                        ]}
                     />
                     <div className="movie-filter" style={style.header}>
                         <div className="filter">

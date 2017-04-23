@@ -41,12 +41,30 @@ export default class Search extends Component {
             let searchResults = this.props.searchResults;
             let token = this.props.token;
             const {renderSearch} = this.state;
+
+            let title = "Search results for "+this.props.routeParams.query+ " on OMG Youtube";
+            let description = "Watch and download collection of latest and popular "+this.props.routeParams.query+ " from Youtube";
+            let thumbnail = "http://omgyoutube.com/img/download%20youtube%20videos.png";
+            let keywords = "omg youtube, youtube downloader, easy youtube downloader, youtube to mp4, youtube to mp3, hd movie torrents, download videos";
+
             if(searchResults && searchResults.length > 0) {
                 return (<div>
                     <Helmet
                         htmlAttributes={{"lang": "en", "amp": undefined}}
                         title={"Search results for "+ this.props.routeParams.query}
                         defaultTitle="OMG! Download videos from Youtube"
+                        meta={[
+                            {"name": "description", "content": description},
+                            {"name": "keywords", "content": keywords},
+                            {"name":"thumbnail", "content": thumbnail},
+                            {"property": "og:site_name", "content": "OMG Youtube"},
+                            {"property": "og:image", "content": thumbnail},
+                            {"property": "twitter:card", "content": "summary_large_image"},
+                            {"property": "twitter:site", "content": "@omgyoutube"},
+                            {"property": "twitter:title", "content": title},
+                            {"property": "twitter:text:description", "content":description},
+                            {"property":"twitter:image", "content": thumbnail}
+                        ]}
                     />
             {searchResults ? (
                 <div className="home-content search-content white">

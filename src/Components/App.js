@@ -97,13 +97,29 @@ export default class App extends Component {
       let channels = this.props.channels;
       let playlists = this.props.playlists;
       let movies = this.props.movies;
+      let description = "Watch and download Youtube Videos and Movie Torrents. Download videos in MP3 or MP4 HD formats easily. Watch movie trailers and download movie torrents. Works on both web and mobile.";
+      let thumbnail = "http://omgyoutube.com/img/download%20youtube%20videos.png";
+      let keywords = "omg youtube, youtube downloader, easiset youtube downloader, youtube to mp4, youtube to mp3, hd movie torrents, download videos";
+      let title = "OMG Youtube! Watch and Download Youtube Videos and Movie Torrents";
       //console.log(this.props)
       if(channels && playlists) {
         return (<div>
           <Helmet
               htmlAttributes={{"lang": "en", "amp": undefined}}
-              title={"OMG Youtube! Watch and Download Youtube Videos"}
+              title={"OMG Youtube! Watch and Download Youtube Videos and Movie Torrents"}
               defaultTitle="OMG Youtube! Download videos from Youtube"
+              meta={[
+                {"name": "description", "content": description},
+                {"name": "keywords", "content": keywords},
+                {"name":"thumbnail", "content": thumbnail},
+                {"property": "og:site_name", "content": "OMG Youtube"},
+                {"property": "og:image", "content": thumbnail},
+                {"property": "twitter:card", "content": "summary_large_image"},
+                {"property": "twitter:site", "content": "@omgyoutube"},
+                {"property": "twitter:title", "content": title},
+                {"property": "twitter:text:description", "content":description},
+                {"property":"twitter:image", "content": thumbnail}
+              ]}
           />
           <div className="home-content white">
           {!this.props.routeParams.watch?<Slider />:''}

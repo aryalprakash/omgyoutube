@@ -104,11 +104,28 @@ export default class Collection extends Component {
             let data = this.state.data;
             let collection = this.props.routeParams.collection;
             let collection_menu = Collections[collection];
-                return (<div>
+            let title = "Download "+slug+" "+collection+ " from Youtube";
+            let description = "Watch and download collection of latest and popular "+slug+" "+collection+ " from Youtube";
+            let thumbnail = "http://omgyoutube.com/img/download%20youtube%20videos.png";
+            let keywords = "omg youtube, youtube downloader, easiset youtube downloader, youtube to mp4, youtube to mp3, hd movie torrents, download videos";
+
+            return (<div>
                     <Helmet
                         htmlAttributes={{"lang": "en", "amp": undefined}}
                         title={"Download "+slug+" "+collection+ " from Youtube"}
                         defaultTitle="OMG! Download videos from Youtube"
+                        meta={[
+                            {"name": "description", "content": description},
+                            {"name": "keywords", "content": keywords},
+                            {"name":"thumbnail", "content": thumbnail},
+                            {"property": "og:site_name", "content": "OMG Youtube"},
+                            {"property": "og:image", "content": thumbnail},
+                            {"property": "twitter:card", "content": "summary_large_image"},
+                            {"property": "twitter:site", "content": "@omgyoutube"},
+                            {"property": "twitter:title", "content": title},
+                            {"property": "twitter:text:description", "content":description},
+                            {"property":"twitter:image", "content": thumbnail}
+                        ]}
                     />
                     <div className="playlist white">
                         <div className="playlistHeader">

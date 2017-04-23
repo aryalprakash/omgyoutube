@@ -64,11 +64,29 @@ export default class Playlist extends Component {
             let type = this.props.routeParams.type;
             let data = this.state.data;
 
+            let title = "Download "+this.props.routeParams.playlist+" videos from Youtube";
+            let description = "Watch and download collection of latest and popular "+this.props.routeParams.playlist+ " videos from Youtube";
+            let thumbnail = "http://omgyoutube.com/img/download%20youtube%20videos.png";
+            let keywords = "omg youtube, youtube downloader, easiset youtube downloader, youtube to mp4, youtube to mp3, hd movie torrents, download videos";
+
+
             return (<div>
                 <Helmet
                     htmlAttributes={{"lang": "en", "amp": undefined}}
                     title={"Download " + this.props.routeParams.playlist + " videos in Youtube"}
                     defaultTitle="OMG Youtube! Download videos from Youtube"
+                    meta={[
+                        {"name": "description", "content": description},
+                        {"name": "keywords", "content": keywords},
+                        {"name":"thumbnail", "content": thumbnail},
+                        {"property": "og:site_name", "content": "OMG Youtube"},
+                        {"property": "og:image", "content": thumbnail},
+                        {"property": "twitter:card", "content": "summary_large_image"},
+                        {"property": "twitter:site", "content": "@omgyoutube"},
+                        {"property": "twitter:title", "content": title},
+                        {"property": "twitter:text:description", "content":description},
+                        {"property":"twitter:image", "content": thumbnail}
+                    ]}
                 />
                 <div className=" playlist white">
                     <div className="playlistHeader">
