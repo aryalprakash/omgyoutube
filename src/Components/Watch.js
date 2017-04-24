@@ -123,6 +123,7 @@ class Watch extends Component {
                         {"property": "og:video:width", "content": "1280"},
                         {"property": "og:video:height", "content": "720"},
                         {"property": "og:title", "content": "Download "+ title},
+                        {"property": "og:description", "content": description},
                         {"property": "og:image", "content": thumbnail},
                         {"property": "og:type", "content": "video"},
                         {"property": "twitter:card", "content": "summary_large_image"},

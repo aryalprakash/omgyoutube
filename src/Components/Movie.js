@@ -125,6 +125,7 @@ class Movie extends Component {
                     {"property": "og:site_name", "content": "OMG Youtube"},
                     {"property": "og:url", "content": omgurl},
                     {"property": "og:title", "content": "Download "+ movie_title},
+                    {"property": "og:description", "content": synopsis},
                     {"property": "og:image", "content": thumbnail},
                     {"property": "og:type", "content": "video"},
                     {"property": "twitter:card", "content": "summary_large_image"},

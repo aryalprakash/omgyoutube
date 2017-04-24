@@ -102,7 +102,7 @@ export default class App extends Component {
       let keywords = "omg youtube, youtube downloader, easiset youtube downloader, youtube to mp4, youtube to mp3, hd movie torrents, download videos";
       let title = "OMG Youtube! Watch and Download Youtube Videos and Movie Torrents";
       //console.log(this.props)
-      if(channels && playlists) {
+      if(title) {
         return (<div>
           <Helmet
               htmlAttributes={{"lang": "en", "amp": undefined}}
