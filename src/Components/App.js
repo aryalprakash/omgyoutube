@@ -93,7 +93,7 @@ export default class App extends Component {
   }
 
   render() {
-    try{
+    //try{
       let channels = this.props.channels;
       let playlists = this.props.playlists;
       let movies = this.props.movies;
@@ -240,13 +240,13 @@ export default class App extends Component {
           </div>
         </div>);
       }else return(<div className="home-content white"><Loader /></div>)
-    }
-    catch(e){
-      console.log(e);
-      return(<div>
-      <Loader />
-      </div>)
-    }
+    //}
+    //catch(e){
+    //  console.log(e);
+    //  return(<div>
+    //  <Loader />
+    //  </div>)
+    //}
   }
 }
 
