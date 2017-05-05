@@ -242,7 +242,7 @@ export default class Header extends Component {
                 {this.state.focus && this.state.query.length>0 && this.state.suggestLoader && !searchQueries ?<div className="signal"></div>:null}
                 </div>
                     <button className="search-icon-box" onClick={_=>this._checkVid()}>
-                        <img src="../img/search.png" className="search-icon"/>
+                        <img src="/img/search.png" className="search-icon"/>
                     </button>
                 <div>
                 {
