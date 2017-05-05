@@ -55,9 +55,9 @@ render((
         <div className="footer">
         <div className="footer-content">Made with <a href="/#/search/love">{'<'}3</a> in <a className="channel-link" href="/#/search/Nepal">Nepal</a></div>
             <div className="social-links">
-                <a href="https://facebook.com/OMGYoutubeApp" target="_blank" title="Like us on Facebook"><div className="social facebook"><img src="../img/facebook.png" width="100%" /></div></a>
-                <a href="https://twitter.com/OMGYoutubeApp" target="_blank" title="Follow us on Twitter"> <div className="social twitter"><img src="../img/twitter.png" width="100%" /></div></a>
-                <a href="https://instagram.com/OMGYoutubeApp" target="_blank" title="Follow us on Instagram"> <div className="social instagram"><img src="../img/instagram.png" width="100%" /></div></a>
+                <a href="https://facebook.com/OMGYoutubeApp" target="_blank" title="Like us on Facebook"><div className="social facebook"><img src="/img/facebook.png" width="100%" /></div></a>
+                <a href="https://twitter.com/OMGYoutubeApp" target="_blank" title="Follow us on Twitter"> <div className="social twitter"><img src="/img/twitter.png" width="100%" /></div></a>
+                <a href="https://instagram.com/OMGYoutubeApp" target="_blank" title="Follow us on Instagram"> <div className="social instagram"><img src="/img/instagram.png" width="100%" /></div></a>
             </div>
         </div>
     </div>

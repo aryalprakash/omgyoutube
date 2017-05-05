@@ -170,8 +170,9 @@ class Watch extends Component {
                                     <li><a href={"mailto:?subject=&body="+encodeURIComponent(window.location.href)} target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img src="../img/social_flat_rounded_rects_svg/Email.svg" /></a></li>
                                 </ul>
                             </div>
-
-
+                            <div className="video-desc white">
+                                {description}
+                            </div>
                             <div className="video-comments white">
                                 <div id="fb-root"></div>
                                 <div className="fb-comments" dataHref={this.state.omgurl} width="100%" dataNumposts="5"></div>

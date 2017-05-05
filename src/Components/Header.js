@@ -106,12 +106,12 @@ export default class Header extends Component {
         var data = new FormData();
         data.append("type", "Video");
         data.append("query", this.state.query);
-        fetch(SERVER_URL+"/searchlog.php",
-            {
-                method: "POST",
-                body: data
-            })
-            .then(function(res){ return res.json(); });
+        //fetch(SERVER_URL+"/searchlog.php",
+        //    {
+        //        method: "POST",
+        //        body: data
+        //    })
+        //    .then(function(res){ return res.json(); });
     }
 
 
@@ -217,10 +217,10 @@ export default class Header extends Component {
         return(<div className="row head ">
             <div className="twenty">
                 <div className="nav-icon" onClick={this._toggleSidebar}>
-                    <img src="../img/nav.png" width="100%" />
+                    <img src="/img/nav.png" width="100%" />
                 </div>
                 <Link className="link" to="/">
-                    <img src="../img/logo.png" className="logo" width="100%" />
+                    <img src="/img/logo.png" className="logo" width="100%" />
                     <div className="logo-name">OMG Youtube</div>
                 </Link>
             </div>

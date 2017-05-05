@@ -628,7 +628,18 @@ iframe{
     overflow: auto;
 }
 
+.video-desc{
+    padding: 5px;
+    max-height: 240px;
+    font-size: 13px;
+    color: #686868;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-line;
+}
+
 .video-share{
+    padding: 5px;
     width: 100%;
     max-width: 740px;
     display: block;
