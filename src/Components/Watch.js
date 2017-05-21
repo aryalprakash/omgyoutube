@@ -201,11 +201,11 @@ class Watch extends Component {
                                     return(<div key={video.id.videoId}>
                                         <div className="sidebar-video">
                                         <div className="sidebar-video-thumbnail">
-                                            <Link to={`/watch/v=${video.id.videoId}`} className="title-link" onClick={_=> this.gotoVideo(video.id.videoId)}> <img src={video.snippet.thumbnails.medium.url} width="100%"/></Link>
+                                            <Link to={`/watch/v=${video.id.videoId}`}  onClick={_=> this.gotoVideo(video.id.videoId)}> <img src={video.snippet.thumbnails.medium.url} width="100%"/></Link>
                                         </div>
                                         <div className="sidebar-video-info">
                                             <div className="video-title">
-                                                <Link to={`/watch/v=${video.id.videoId}`} className="title-link" onClick={_=> this.gotoVideo(video.id.videoId)}>{video.snippet.title}</Link>
+                                                <Link to={`/watch/v=${video.id.videoId}`} onClick={_=> this.gotoVideo(video.id.videoId)}>{video.snippet.title}</Link>
                                             </div>
                                             <Link to={`/channel/${video.snippet.channelId}/relevance`}><div className="video-channel">{video.snippet.channelTitle}</div></Link>
                                         </div>
