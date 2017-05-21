@@ -33,9 +33,10 @@ export const Collections = {
     ],
     "TV-Series":[
         {name: "Bhadragol", slug:"bhadragol", id:"PL5IdznwvT_07yiUGA2964s0bRSAGfvnbD"},
+        {name: "Bachelors", slug:"bachelors", id:"PLTB0eCoUXErYP_eXc3do0K4dIMUR3XwMG"},
+        {name: "Tripling", slug:"tripling", id:"PLTB0eCoUXEraZe3d7fJRdB-znE5D0cMZ7"},
+        {name: "Little Things", slug:"little-things", id:"PL4x7Of-X4XhgNBVfFpd1N4cSU_X1x96gU"},
         {name: "What The Flop", slug:"what-the-flop", id:"PLwUmS78P9jN2rLrgfiMUPIJjZL0kukfo-"},
-        {name: "Meri Bassai", slug:"meri-bassai", id:"PL5IdznwvT_06KpomPRMReY_cHcR_R7MmH"},
-        {name: "P.S. Zindagi", slug:"ps-zindagi", id:"PLfGe262LL7mrIHohKt6YNKeeWgHA0dKiv"},
         {name: "Permanent Roommates", slug:"permanent-roommates", id:"PLTB0eCoUXErZe2pMrH3qO4tHtw-K0QKb_"}
     ]
 };
