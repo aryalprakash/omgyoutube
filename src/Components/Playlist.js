@@ -89,12 +89,12 @@ export default class Playlist extends Component {
                         {"property":"twitter:image", "content": thumbnail}
                     ]}
                 />
-                <div className=" playlist white">
+                <div className=" playlist">
                     <div className="playlistHeader">
                         <PlayMenu path={this.props.routeParams.playlist} />
                         <div className="header-line"></div>
                     </div>
-
+                <div className="white">
                 {videos.length > 0 ?
                     videos.map(video=> video.snippet.thumbnails?
                         (<div className="playlist-results" key={video.snippet.resourceId.videoId}>
@@ -121,6 +121,7 @@ export default class Playlist extends Component {
                         <span className="page-number" onClick={_=> this.getMoreResults(videos[0].snippet.playlistId, token)}>Get More Results</span>
                     </div>: null}
 
+                </div>
                 </div>
             </div>)
         } catch (e) {

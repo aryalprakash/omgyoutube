@@ -28,7 +28,7 @@ a{
 
 .header{
     background-color: #B61F24;
-    height: 200px;
+    height: 120px;
 }
 
 .footer{
@@ -195,12 +195,12 @@ a{
     max-width: 1075px;
     width: 100%;
     margin: 0 auto;
-    margin-top: -140px;
+    margin-top: -96px;
     min-height: 82vh;
 }
 
 .head{
-    height: 70px;
+    height: 59px;
     background-color: transparent;
 }
 
@@ -534,6 +534,7 @@ iframe{
     background-color: white;
     height: inherit;
     overflow: hidden;
+    width: 100%;
 }
 
 .playlist{
@@ -597,12 +598,14 @@ iframe{
     display: block;
     overflow: auto;
     margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 .left{
     width: 100%;
     max-width: 740px;
     float: left;
+    margin-top: 5px;
 }
 
 .halfleftko{
@@ -716,7 +719,7 @@ iframe{
     height: 1px;
     width: 100%;
     float: left;
-    margin: 10px auto;
+    margin: 5px auto;
 }
 
 .header-line{
@@ -835,7 +838,8 @@ iframe{
 
 /*Playlist menu*/
 .playlistHeader{
-    height: 35px;
+    height: 38px;
+    background: white;
     text-align: center;
 }
 
@@ -1065,7 +1069,7 @@ ul.share-buttons img{
     max-width: 500px;
     margin: 20px auto;
     text-align: center;
-    height: 30px;
+    /*height: 30px;*/
 }
 
 .page-number{
@@ -1169,6 +1173,10 @@ ul.share-buttons img{
         float: none;
     }
 
+    .header{
+        height: 200px;
+    }
+
     .head{
         text-align: center;
         margin-top: -200px;
@@ -1183,6 +1191,14 @@ ul.share-buttons img{
         width: 99%;
         float: none;
         margin: auto;
+    }
+
+    .playlist-menu{
+        margin-top: 30px;
+    }
+
+    .playlist-button{
+        margin-bottom: 10px;
     }
 
     .ninty{
@@ -1244,6 +1260,10 @@ ul.share-buttons img{
         width: 100%;
     }
 
+    .header{
+        height: 200px;
+    }
+
     .search-icon-box{
         width: 15%;
     }
@@ -1261,6 +1281,7 @@ ul.share-buttons img{
         height: 100vh;
         float: left;
     }
+
     .playlist-button {
         font-size: 18px;
         display: list-item;

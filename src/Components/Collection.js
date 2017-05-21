@@ -61,7 +61,7 @@ export default class Collection extends Component {
 
 
     renderVideos(videos){
-        return (<div>
+        return (<div className="white">
         {videos.map(video=> video.snippet.thumbnails?
             (<div><div className="sidebar-video">
                     <div className="search-list">
@@ -127,7 +127,7 @@ export default class Collection extends Component {
                             {"property":"twitter:image", "content": thumbnail}
                         ]}
                     />
-                    <div className="playlist white">
+                    <div className="playlist">
                         <div className="playlistHeader">
                             <PlayMenu path={this.props.routeParams.collection} />
                             <div className="header-line"></div>

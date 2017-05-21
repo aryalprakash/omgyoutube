@@ -59,6 +59,7 @@
     "isomorphic-fetch": "^2.2.1",
     "jquery": "^3.1.1",
     "jsonp": "^0.2.1",
-    "react-stickydiv": "^3.4.19"
+    "react-stickydiv": "^3.4.19",
+    "react-toggle-button": "^2.1.0"
   }
 }

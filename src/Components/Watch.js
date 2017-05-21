@@ -8,6 +8,7 @@ import {SERVER_URL} from'../constants/ActionTypes.js'
 import {getVideoData, getChannelVideos, flushCurrentData, getRelatedVideos} from '../actions/video.js'
 import Header from './Header.js'
 import Loader from './Loader.js'
+import PlayMenu from './PlayMenu.js'
 
 
 class Watch extends Component {
@@ -38,8 +39,9 @@ class Watch extends Component {
             this.props.dispatch(getVideoData(this.props.routeParams.videoID));
     }
 
-    componentWillReceiveProps(){
-        this.setState({omgurl: `${SERVER_URL}/#/watch/v=${this.props.routeParams.videoID}`})
+    componentWillReceiveProps(nextProps){
+        this.setState({omgurl: `${SERVER_URL}/#/watch/v=${this.props.routeParams.videoID}`});
+
     }
 
     componentDidMount(){
@@ -87,7 +89,7 @@ class Watch extends Component {
             relatedVideos = this.props.relatedVideos.items;
         }
         this.state.omgurl = `http://omgyoutube.com/watch/v=${this.props.routeParams.videoID}`;
-        let ogurl = 'https://https://www.youtube.com/embed/'+this.props.routeParams.videoID;
+        let ogurl = 'https://www.youtube.com/embed/'+this.props.routeParams.videoID;
         let Iframe="iframe";
         if(this.props.vidinfo && this.props.vidinfo.info){
             //try {
@@ -134,6 +136,10 @@ class Watch extends Component {
                     ]}
                 />
                 <div className="transparent">
+                    <div className="playlistHeader">
+                        <PlayMenu  />
+                        <div className="header-line"></div>
+                    </div>
                     <div className="left" ref="left">
                         <div className="video">
                             <div className="video-container" ref="videoFrame">
@@ -195,11 +201,11 @@ class Watch extends Component {
                                     return(<div key={video.id.videoId}>
                                         <div className="sidebar-video">
                                         <div className="sidebar-video-thumbnail">
-                                            <a className="title-link" onClick={_=> this.gotoVideo(video.id.videoId)}> <img src={video.snippet.thumbnails.medium.url} width="100%"/></a>
+                                            <Link to={`/watch/v=${video.id.videoId}`} className="title-link" onClick={_=> this.gotoVideo(video.id.videoId)}> <img src={video.snippet.thumbnails.medium.url} width="100%"/></Link>
                                         </div>
                                         <div className="sidebar-video-info">
                                             <div className="video-title">
-                                                <a className="title-link" onClick={_=> this.gotoVideo(video.id.videoId)}>{video.snippet.title}</a>
+                                                <Link to={`/watch/v=${video.id.videoId}`} className="title-link" onClick={_=> this.gotoVideo(video.id.videoId)}>{video.snippet.title}</Link>
                                             </div>
                                             <Link to={`/channel/${video.snippet.channelId}/relevance`}><div className="video-channel">{video.snippet.channelTitle}</div></Link>
                                         </div>

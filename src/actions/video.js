@@ -61,7 +61,7 @@ export function getChannelVideos (channelId){
 
 export function getRelatedVideos(videoId){
     return function(dispatch){
-        const url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&relatedToVideoId='+videoId+'&type=video&key='+API_KEY+'&maxResults=20'
+        const url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&relatedToVideoId='+videoId+'&type=video&key='+API_KEY+'&maxResults=50'
         fetch(url).then(response => response.json()).then(res =>{
             dispatch(gotRelatedVideos(res))
         })
@@ -164,7 +164,8 @@ export function getPlaylistVideos(playlist){
 export function getAllPlaylistVideos(playlist, no){
     no? no=no: no=20
     return function(dispatch){
-        dispatch(clearVideos())
+        dispatch(clearVideos());
+        dispatch(flushCurrentData());
         let url = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults='+no+'&order=date&playlistId='+playlist+'&key='+API_KEY;
         fetch(url).then(response => response.json()).then(res =>{
             res.items.sort(function(a,b){
