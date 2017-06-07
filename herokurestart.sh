@@ -1,8 +1,8 @@
-statusresponse=$(curl --write-out %{http_code} --silent --output /dev/null https://whispering-forest-28906.herokuapp.com/http://omgyoutube.com)
+statusresponse=$(curl --write-out %{http_code} --silent --output /dev/null https://aqueous-fortress-45740.herokuapp.com/http://omgyoutube.com)
 
 if [ $statusresponse == 503 ]
 then
-	heroku restart -a whispering-forest-28906
+	heroku restart -a aqueous-fortress-45740
 else
 	echo "thik chha"
 fi
