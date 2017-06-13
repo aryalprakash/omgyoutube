@@ -61,7 +61,7 @@ export function getChannelVideos (channelId){
 
 export function getRelatedVideos(videoId){
     return function(dispatch){
-        const url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&relatedToVideoId='+videoId+'&type=video&key='+API_KEY+'&maxResults=50'
+        const url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&relatedToVideoId='+videoId+'&type=video&key='+API_KEY+'&maxResults=25'
         fetch(url).then(response => response.json()).then(res =>{
             dispatch(gotRelatedVideos(res))
         })
