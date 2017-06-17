@@ -1,10 +1,11 @@
 export const API_URL = 'http://youtubedltest0.herokuapp.com/api/info?url=https://www.youtube.com/watch?v=';
 //export const API_URL = 'http://omgyoutube.herokuapp.com/api/info?url=https://www.youtube.com/watch?v=';
 //export const API_KEY = 'AIzaSyArwuhcNmt0NAixnehN_SqEVoqQmQTEWus';
-export const API_KEY = 'AIzaSyCaskXcV-afNC59qRS9zAhpCTwPXAKkt2A';
+//export const API_KEY = 'AIzaSyCaskXcV-afNC59qRS9zAhpCTwPXAKkt2A';
+export const API_KEY = 'AIzaSyA0X0V73UFA60686q7MLWnxzhtMvC1xlJs';
 //export const SERVER_URL = 'http://localhost/omgyoutube';
 export const SERVER_URL = 'http://omgyoutube.com';
-export const YTS_LIST ='https://yts.ag/api/v2/list_movies.json'
+export const YTS_LIST ='https://yts.ag/api/v2/list_movies.json';
 
 export const PLAYLISTS = [
     {name: 'cute', id: 'PLlpHoeIVvNBuDXXZa3CProSz4DEd3Y67H'},
