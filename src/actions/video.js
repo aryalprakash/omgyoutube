@@ -52,7 +52,7 @@ export function getVideoData (videoID) {
 
 export function getChannelVideos (channelId){
     return function(dispatch){
-        const url = 'https://www.googleapis.com/youtube/v3/search?key='+API_KEY+'&channelId='+channelId+'&part=snippet,id&order=date&maxResults=10'
+        const url = 'https://www.googleapis.com/youtube/v3/search?key='+API_KEY1+'&channelId='+channelId+'&part=snippet,id&order=date&maxResults=10'
         fetch(url).then(response => response.json()).then(res => {
             dispatch(gotChannelVideos(res));
         })
@@ -72,9 +72,9 @@ export function getAllVideosFromChannel(channel, type, token){
     return function(dispatch){
         let url
             if(token){
-                url = 'https://www.googleapis.com/youtube/v3/search?key='+API_KEY+'&channelId='+channel+'&pageToken='+token+'&part=snippet,id&order='+type+'&maxResults=20'
+                url = 'https://www.googleapis.com/youtube/v3/search?key='+API_KEY1+'&channelId='+channel+'&pageToken='+token+'&part=snippet,id&order='+type+'&maxResults=20'
             }else{
-                url = 'https://www.googleapis.com/youtube/v3/search?key='+API_KEY+'&channelId='+channel+'&part=snippet,id&order='+type+'&maxResults=20'
+                url = 'https://www.googleapis.com/youtube/v3/search?key='+API_KEY1+'&channelId='+channel+'&part=snippet,id&order='+type+'&maxResults=20'
             }
         fetch(url).then(response => response.json()).then(res =>{
             dispatch(gotAllChannelVideos(res))
@@ -88,9 +88,9 @@ export function searchVideo(query, token){
     return function(dispatch){
         let url;
         if(token){
-             url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&pageToken='+token+'&q='+query+'&type=video&key='+API_KEY+'&maxResults=20';
+             url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&pageToken='+token+'&q='+query+'&type=video&key='+API_KEY2+'&maxResults=20';
         }else{
-             url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q='+query+'&type=video&key='+API_KEY+'&maxResults=20';
+             url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q='+query+'&type=video&key='+API_KEY2+'&maxResults=20';
         }
         fetch(url).then(response => response.json()).then(res =>{
             dispatch(gotSearchResults(res))
@@ -102,7 +102,7 @@ export function suggestSearchQuery(type, query){
     return function(dispatch){
         if(type == "Video"){
             //let key= "AI39si7ZLU83bKtKd4MrdzqcjTVI3DK9FvwJR6a4kB_SW_Dbuskit-mEYqskkSsFLxN5DiG1OBzdHzYfW0zXWjxirQKyxJfdkg";
-            let url = "http://suggestqueries.google.com/complete/search?hl=en&ds=yt&client=youtube&hjson=t&cp=1&q="+query+"&key="+API_KEY+"&format=5&alt=json&callback=?"
+            let url = "http://suggestqueries.google.com/complete/search?hl=en&ds=yt&client=youtube&hjson=t&cp=1&q="+query+"&key="+API_KEY2+"&format=5&alt=json&callback=?"
             $.ajax({
                 url: url,
                 dataType: 'jsonp',
@@ -130,7 +130,7 @@ export function suggestSearchQuery(type, query){
 
 export function getMoreVideos(query, token){
     return function(dispatch){
-        let url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&pageToken='+token+'&q='+query+'&type=video&key='+API_KEY+'&maxResults=10';
+        let url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&pageToken='+token+'&q='+query+'&type=video&key='+API_KEY2+'&maxResults=10';
         fetch(url).then(response => response.json()).then(res =>{
 
             dispatch(gotMoreVideos(res))
@@ -140,7 +140,7 @@ export function getMoreVideos(query, token){
 
 export function getMoreVideosForChannel(channel, type, token){
     return function(dispatch){
-        let url = 'https://www.googleapis.com/youtube/v3/search?key='+API_KEY+'&channelId='+channel+'&pageToken='+token+'&part=snippet,id&order='+type+'&maxResults=10'
+        let url = 'https://www.googleapis.com/youtube/v3/search?key='+API_KEY1+'&channelId='+channel+'&pageToken='+token+'&part=snippet,id&order='+type+'&maxResults=10'
         fetch(url).then(response => response.json()).then(res =>{
 
             dispatch(gotMoreVideos(res))
