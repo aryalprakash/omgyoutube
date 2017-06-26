@@ -8,7 +8,7 @@ import Loader from './Loader.js'
 import App from './App.js'
 import PlayMenu from './PlayMenu.js'
 
-export default class Home extends Component {
+export class Home extends Component {
 
     toggleView = () => {
         this.setState({

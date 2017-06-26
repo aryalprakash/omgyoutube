@@ -13,7 +13,7 @@ import Slider from './Slider.js'
 let channels = ['UCrzyJYtjLOTfnUur8hsr7ow', 'UC7WYScFxhgJeeL_sJkd8JYg', 'UCE80xxtgnBxqb3DR6ThohvA', 'UCNR1KcWXj7zpWQFJtU3ddYg', 'UCxCoea3ulOukfXiYAm87ZIA', 'UCsnH4_UnQs5D-ye-SEnHxpg', 'UCd97ukfGaYt4LKtIgKm9Vhw', 'UCq-Fj5jknLsUf-MWSy4_brA', 'UCX52tYZiEh_mHoFja3Veciw', 'UC56gTxNs4f9xZ7Pa2i5xNzg', 'UCJrDMFOdv1I2k8n9oK_V21w', 'UCe_vXdMrHHseZ_esYUskSBw', 'UCUK0HBIBWgM2c4vsPhkYY4w','UCPDis9pjXuqyI7RYLJ-TTSA']
 let playlist = [{name:"Editor's Picks", id:'PLlpHoeIVvNBsY2UdwZaWtKXdAGsaM77h9'}];
 
-export default class App extends Component {
+export class App extends Component {
 
   constructor(){
     super()

@@ -5,7 +5,7 @@ import { Router, Route, Link, browserHistory } from 'react-router'
 import {getAllPlaylistVideos} from '../actions/video.js';
 import {PLAYLISTS, Collections, SERVER_URL} from '../constants/ActionTypes.js'
 
-export default class PlayMenu extends Component {
+export class PlayMenu extends Component {
 
     _keeplog(value){
         //var data = new FormData();

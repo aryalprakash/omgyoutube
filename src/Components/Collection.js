@@ -10,7 +10,7 @@ import Loader from './Loader.js'
 import PlayMenu from './PlayMenu.js'
 import {Collections} from '../constants/ActionTypes.js'
 
-export default class Collection extends Component {
+export class Collection extends Component {
 
     constructor(){
         super()

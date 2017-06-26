@@ -36,7 +36,7 @@ let style={
     }
 };
 
-export default class MovieTorrents extends Component {
+export class MovieTorrents extends Component {
 
     constructor() {
         super()

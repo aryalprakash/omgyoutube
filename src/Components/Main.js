@@ -7,7 +7,7 @@ import Header from './Header.js'
 import Loader from './Loader.js'
 import App from './App.js'
 
-export default class Main extends Component {
+export class Main extends Component {
 
     render() {
         return(<div>

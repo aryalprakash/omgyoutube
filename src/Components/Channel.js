@@ -9,7 +9,7 @@ import Home from './Home.js'
 import App from './App.js'
 import Loader from './Loader.js'
 
-export default class Channel extends Component {
+export class Channel extends Component {
 
     constructor(){
         super()

@@ -10,7 +10,7 @@ let style={
 
 }
 
-export default class Header extends Component {
+export class Header extends Component {
 
     constructor(){
         super()

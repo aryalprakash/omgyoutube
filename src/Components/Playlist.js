@@ -11,7 +11,7 @@ import Loader from './Loader.js'
 
 import {PLAYLISTS} from '../constants/ActionTypes.js'
 
-export default class Playlist extends Component {
+export class Playlist extends Component {
 
     constructor() {
         super()

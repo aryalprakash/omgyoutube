@@ -10,7 +10,7 @@ import Loader from './Loader.js'
 //const channels = ['UCrzyJYtjLOTfnUur8hsr7ow', 'UC7WYScFxhgJeeL_sJkd8JYg', 'UCE80xxtgnBxqb3DR6ThohvA', 'UCNR1KcWXj7zpWQFJtU3ddYg', 'UCxCoea3ulOukfXiYAm87ZIA', 'UCsnH4_UnQs5D-ye-SEnHxpg', 'UCd97ukfGaYt4LKtIgKm9Vhw']
 
 
-export default class Search extends Component {
+export class Search extends Component {
 
     componentWillMount(){
         //channels.map(channelId => this.props.dispatch(getChannelVideos(channelId)))
