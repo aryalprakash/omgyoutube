@@ -14,6 +14,7 @@ css-loader
 babel
 react-helmet
 
+```
 
 ### Usage
 ```
